@@ -49,6 +49,8 @@ ul,
 li,
 fieldset,
 form,
+textarea,
+input,
 label,
 legend,
 table,
@@ -123,6 +125,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 a {
   text-decoration: none;
+}
+
+.modal__small-input:focus {
+  border: 0px;
 }

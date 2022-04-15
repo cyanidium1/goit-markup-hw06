@@ -50,13 +50,57 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <div class="modal-close" data-modal-close></div>
+            <div class="modal__close" data-modal-close></div>
+            <p class="modal__header" >Оставьте свои данные, мы вам перезвоним</p>
+            <form action="" class="modal__form">
+
+                <label class="label" for="name"><p class="modal__description" >Имя</p>
+                    <div class="modal__input-svg"><input class="modal__small-input" type="text" id="name">
+                        <svg class="modal__input-svg-icon">
+                            <use href="./img/svgs/cola.svg#icon-name"></use>
+                        </svg>
+                    </div>
+                </label>
+                
+                <label class="label" for="phone"><p class="modal__description" >Телефон</p>
+                    <div class="modal__input-svg">
+                        <input class="modal__small-input" type="text" id="phone">
+                        <svg class="modal__input-svg-icon">
+                            <use href="./img/svgs/cola.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </label>
+                
+                <label class="label" for="mail"><p class="modal__description" >Почта</p>
+                    <div class="modal__input-svg">
+                        <input class="modal__small-input" type="text" id="mail">
+                        <svg class="modal__input-svg-icon">
+                            <use href="./img/svgs/cola.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </label>
+                
+                <label>
+                    <p class="modal__description" >Комментарий</p>
+                    <textarea class="modal__big-input" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                </label>
+                <label class="modal__label_checkbox" for="input-confirm">
+                    <input class="modal__input-checkbox" id="input-confirm" type="checkbox">
+                    
+                        <span class="modal__span">
+                        <svg class="modal__confirm-svg">
+                            <use href="./img/svgs/cola.svg#icon-confirm" ></use>
+                        </svg></span>
+                        <p class="modal__confirm">Соглашаюсь с рассылкой и принимаю <a class="modal__confirm-link" href="">Условия договора</a></p>
+                </label>
+                <button type="submit" class="submit">Отправить</button>
+            </form>
         </div>
     </div>
 
     <!-- WHAT WE DO -->
 
-    <section class="what-we-do">
+    <section class="section">
         <div class="container">
             <!-- 4 horizontal texts -->
             <ul class="what-we-do">
@@ -98,19 +142,21 @@
                 </li>
             </ul>
             <!-- what we do text -->
-            <h2 class="what-we-do__main-header">Чем мы занимаемся</h2>
-            <!-- 3 pics -->
-            <ul class="what-we-do__pics">
-                <li class="what-we-do__pics-item">
-                    <img src="./img/pics1.jpg" alt="pic" width="370">
-                    <div class="what-we-do__pics-text">Десктопные приложения</div></li>
-                <li class="what-we-do__pics-item">
-                    <img src="./img/pics2.jpg" alt="pic!" width="370">
-                    <div class="what-we-do__pics-text">Мобильные приложения</div></li>
-                <li class="what-we-do__pics-item">
-                    <img src="./img/pics3.jpg" alt="r u rly read this7" width="370">
-                    <div class="what-we-do__pics-text">Дизайнерские решения</div></li>
-            </ul>
+            <div <!-- class="mobile-hidden tablet-hidden"-->>
+                <h2 class="what-we-do__main-header">Чем мы занимаемся</h2>
+                <!-- 3 pics -->
+                <ul class="what-we-do__pics">
+                    <li class="what-we-do__pics-item">
+                        <img src="./img/pics1.jpg" alt="pic" width="370">
+                        <div class="what-we-do__pics-text">Десктопные приложения</div></li>
+                    <li class="what-we-do__pics-item">
+                        <img src="./img/pics2.jpg" alt="pic!" width="370">
+                        <div class="what-we-do__pics-text">Мобильные приложения</div></li>
+                    <li class="what-we-do__pics-item">
+                        <img src="./img/pics3.jpg" alt="r u rly read this7" width="370">
+                        <div class="what-we-do__pics-text">Дизайнерские решения</div></li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -125,7 +171,7 @@
                     <div class="dream-team__bobs-text">   
                         <p class="dream-team__bobs-header">Игорь Демьяненко</p>
                         <p class="dream-team__bobs-work">Product Designer</p>
-                        <!-- social links list -->
+                        social links list
                     <ul class="social-list">
                         <li class="social-list__item">
                             <a class="social-list__link" href="#">
@@ -163,7 +209,7 @@
                     <div class="dream-team__bobs-text">
                     <p class="dream-team__bobs-header">Ольга Репина</p>
                     <p class="dream-team__bobs-work">Frontend Developer</p>
-                    <!-- social links list -->
+                    social links list
                     <ul class="social-list">
                         <li class="social-list__item">
                             <a class="social-list__link" href="#">
@@ -201,7 +247,7 @@
                     <div class="dream-team__bobs-text">
                     <p class="dream-team__bobs-header">Николай Тарасов</p>
                     <p class="dream-team__bobs-work">Marketing</p>
-                    <!-- social links list -->
+                    social links list
                     <ul class="social-list">
                         <li class="social-list__item">
                             <a class="social-list__link" href="#">
@@ -239,7 +285,7 @@
                     <div class="dream-team__bobs-text">
                     <p class="dream-team__bobs-header">Михаил Ермаков</p>
                     <p class="dream-team__bobs-work">UI Designer</p>
-                    <!-- social links list -->
+                    social links list
                     <ul class="social-list">
                         <li class="social-list__item">
                             <a class="social-list__link" href="#">
@@ -323,7 +369,7 @@
                 <a class="email" href="callto:380961111111">+38 096 111 11 11</a>
             </div>
             <div class="footer__socials">
-                <!-- social links list -->
+                social linkss list
                 <p class="footer__text">присоединяйтесь</p>
                 <ul class="socials-footer">
                     <li class="socials-footer__item">
