@@ -514,7 +514,7 @@ margin: 0 auto;
   width: 106px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  padding: 10px 35px;
+  padding: 16px 32px;
   margin: 0 15px;
   fill: #AFB1B8;
   transition: 0.5s;
@@ -542,8 +542,22 @@ margin: 0 auto;
   margin-top: 20px;
   color: white;
 }
+/* .address:focus {
+  color: var(--blue-color);
+}
+
+.address:hover {
+  color: var(--blue-color);
+} */
 .email {
   color:  #FFFFFF99;
+  transition: 0.3s;
+}
+.email:focus {
+  color: var(--blue-color);
+}
+.email:hover {
+  color: var(--blue-color);
 }
 .ending {
   margin: 9px 0;
@@ -566,28 +580,25 @@ margin: 0 auto;
   display: flex;
   
 }
-.socials-footer__item {
+.socials-footer__link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-  margin: 0 5px 0 0;
+  margin: 0 10px 0 0;
   fill: white;
   border-radius: 50%;
-}
-.socials-footer__link {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .socials-footer__svg {
-  margin-top: 3px;
   width: 20px;
   height: 20px;
 }
-.socials-footer__item:hover {
+.socials-footer__link:hover {
   background-color: var(--blue-color);
 }
 /* PORTFOLIO */
